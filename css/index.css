@@ -1,0 +1,93 @@
+body {
+	background-image: url("../images/bg.jpg");
+	background-size: 100% 750px;
+
+}
+
+.content {
+	width:700px;
+	margin:50px auto;
+}
+
+.content .logo {
+	text-align:center;
+}
+
+.content .logo img {
+	width:270px;
+	height:129px;
+}
+
+.content .nav {
+	text-align: center;
+}
+
+.content .nav ul {
+	list-style:none; /* 去除左边小圆点 */
+	/*text-align:center;*/
+	display:inline-block;
+	padding-left: 0px;
+}
+
+.content .nav ul li {
+	/*display: inline;*/
+	float:left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.content .nav ul li a {
+	color: white;
+	font-size: 16px;
+}
+ 
+.content .nav ul li a.active {
+	text-decoration: none; /* 去除文字底部下划线 */
+}
+
+/* 
+	解决输入框和button中间空格
+	居中 
+*/
+.content .search-container {  
+	text-align:center;
+}
+
+.content .search-container .search {
+	/*text-align: center;*/
+	clear: both;
+	height: 40px;
+	/*margin:0px auto;*/
+	/*text-align:center;*/
+	display:inline-block;
+}
+
+.content .search-container .search input {
+	width: 500px;
+	height: 100%;
+	padding-left: 10px;
+	font-size: 18px;
+	border: none;
+	float:left;
+}
+
+.content .search-container .search button {
+	width: 100px;
+	height: 100%;
+	font-size: 18px;
+	background-color: #3388FF;
+	color:white;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	float:left;
+}
+
+.content .search-container .search button:hover {
+	cursor: pointer;
+}
+
+/*
+	非块级元素水平居中：设置父类的text-align：center；
+	块级元素居中：设置margin：0px auto；
+*/
